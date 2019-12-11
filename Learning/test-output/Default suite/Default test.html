@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>0/6/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>0/4/0</td>
 </tr><tr>
-<td>Started on:</td><td>Wed Nov 27 10:50:54 MSK 2019</td>
+<td>Started on:</td><td>Fri Dec 06 11:38:16 MSK 2019</td>
 </tr>
-<tr><td>Total time:</td><td>0 seconds (41 ms)</td>
+<tr><td>Total time:</td><td>282 seconds (282431 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,14 +75,15 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='Tests.QuadratTest.checkPerimetr()'><b>checkPerimetr</b><br>Test class: Tests.QuadratTest<br>Parameters: 1.0</td>
-<td><div><pre>org.testng.TestException: 
-Method QuadratTest.checkPerimetr(java.lang.Double)[pri:1, instance:Tests.QuadratTest@5383967b] should have thrown an exception of type class java.lang.RuntimeException
-	at org.testng.internal.ExpectedExceptionsHolder.noException(ExpectedExceptionsHolder.java:82)
-	at org.testng.internal.TestInvoker.considerExceptions(TestInvoker.java:729)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:616)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+<td title='Tests.CircleTest.checkCircumference()'><b>checkCircumference</b><br>Test class: Tests.CircleTest</td>
+<td><div><pre>org.testng.internal.reflect.MethodMatcherException: 
+[public void Tests.CircleTest.checkCircumference(java.lang.Double,java.lang.Double)] has no parameters defined but was found to be using a data provider (either explicitly specified or inherited from class level annotation).
+Data provider mismatch
+Method: checkCircumference([Parameter{index=0, type=java.lang.Double, declaredAnnotations=[]}, Parameter{index=1, type=java.lang.Double, declaredAnnotations=[]}])
+Arguments: [(java.lang.Double) 1.0]
+	at org.testng.internal.reflect.DataProviderMethodMatcher.getConformingArguments(DataProviderMethodMatcher.java:43)
+	at org.testng.internal.Parameters.injectParameters(Parameters.java:925)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:34)
 	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
 	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
 	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
@@ -103,14 +104,15 @@ Method QuadratTest.checkPerimetr(java.lang.Double)[pri:1, instance:Tests.Quadrat
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div><a href='#' onClick='toggleBox("stack-trace682376643", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace682376643'><pre>org.testng.TestException: 
-Method QuadratTest.checkPerimetr(java.lang.Double)[pri:1, instance:Tests.QuadratTest@5383967b] should have thrown an exception of type class java.lang.RuntimeException
-	at org.testng.internal.ExpectedExceptionsHolder.noException(ExpectedExceptionsHolder.java:82)
-	at org.testng.internal.TestInvoker.considerExceptions(TestInvoker.java:729)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:616)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1661406123", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1661406123'><pre>org.testng.internal.reflect.MethodMatcherException: 
+[public void Tests.CircleTest.checkCircumference(java.lang.Double,java.lang.Double)] has no parameters defined but was found to be using a data provider (either explicitly specified or inherited from class level annotation).
+Data provider mismatch
+Method: checkCircumference([Parameter{index=0, type=java.lang.Double, declaredAnnotations=[]}, Parameter{index=1, type=java.lang.Double, declaredAnnotations=[]}])
+Arguments: [(java.lang.Double) 1.0]
+	at org.testng.internal.reflect.DataProviderMethodMatcher.getConformingArguments(DataProviderMethodMatcher.java:43)
+	at org.testng.internal.Parameters.injectParameters(Parameters.java:925)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:34)
 	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
 	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
 	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
@@ -133,11 +135,11 @@ Method QuadratTest.checkPerimetr(java.lang.Double)[pri:1, instance:Tests.Quadrat
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
 <td>0</td>
-<td>Tests.QuadratTest@5383967b</td></tr>
+<td>Tests.CircleTest@42a48628</td></tr>
 <tr>
-<td title='Tests.QuadratTest.checkPerimetr()'><b>checkPerimetr</b><br>Test class: Tests.QuadratTest<br>Parameters: 10000.0</td>
+<td title='Tests.CircleTest.checkSquare()'><b>checkSquare</b><br>Test class: Tests.CircleTest<br>Parameters: 1.0</td>
 <td><div><pre>org.testng.TestException: 
-Method QuadratTest.checkPerimetr(java.lang.Double)[pri:1, instance:Tests.QuadratTest@5383967b] should have thrown an exception of type class java.lang.RuntimeException
+Method CircleTest.checkSquare(java.lang.Double)[pri:0, instance:Tests.CircleTest@42a48628] should have thrown an exception of type class java.lang.RuntimeException
 	at org.testng.internal.ExpectedExceptionsHolder.noException(ExpectedExceptionsHolder.java:82)
 	at org.testng.internal.TestInvoker.considerExceptions(TestInvoker.java:729)
 	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:616)
@@ -163,9 +165,9 @@ Method QuadratTest.checkPerimetr(java.lang.Double)[pri:1, instance:Tests.Quadrat
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1316061703", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1316061703'><pre>org.testng.TestException: 
-Method QuadratTest.checkPerimetr(java.lang.Double)[pri:1, instance:Tests.QuadratTest@5383967b] should have thrown an exception of type class java.lang.RuntimeException
+</pre></div><a href='#' onClick='toggleBox("stack-trace1442191055", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1442191055'><pre>org.testng.TestException: 
+Method CircleTest.checkSquare(java.lang.Double)[pri:0, instance:Tests.CircleTest@42a48628] should have thrown an exception of type class java.lang.RuntimeException
 	at org.testng.internal.ExpectedExceptionsHolder.noException(ExpectedExceptionsHolder.java:82)
 	at org.testng.internal.TestInvoker.considerExceptions(TestInvoker.java:729)
 	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:616)
@@ -192,12 +194,12 @@ Method QuadratTest.checkPerimetr(java.lang.Double)[pri:1, instance:Tests.Quadrat
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
-<td>0</td>
-<td>Tests.QuadratTest@5383967b</td></tr>
+<td>282</td>
+<td>Tests.CircleTest@42a48628</td></tr>
 <tr>
-<td title='Tests.QuadratTest.checkPerimetr()'><b>checkPerimetr</b><br>Test class: Tests.QuadratTest<br>Parameters: 2.5</td>
+<td title='Tests.CircleTest.checkSquare()'><b>checkSquare</b><br>Test class: Tests.CircleTest<br>Parameters: 10000.0</td>
 <td><div><pre>org.testng.TestException: 
-Method QuadratTest.checkPerimetr(java.lang.Double)[pri:1, instance:Tests.QuadratTest@5383967b] should have thrown an exception of type class java.lang.RuntimeException
+Method CircleTest.checkSquare(java.lang.Double)[pri:0, instance:Tests.CircleTest@42a48628] should have thrown an exception of type class java.lang.RuntimeException
 	at org.testng.internal.ExpectedExceptionsHolder.noException(ExpectedExceptionsHolder.java:82)
 	at org.testng.internal.TestInvoker.considerExceptions(TestInvoker.java:729)
 	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:616)
@@ -223,9 +225,9 @@ Method QuadratTest.checkPerimetr(java.lang.Double)[pri:1, instance:Tests.Quadrat
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1413246829", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1413246829'><pre>org.testng.TestException: 
-Method QuadratTest.checkPerimetr(java.lang.Double)[pri:1, instance:Tests.QuadratTest@5383967b] should have thrown an exception of type class java.lang.RuntimeException
+</pre></div><a href='#' onClick='toggleBox("stack-trace201576232", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace201576232'><pre>org.testng.TestException: 
+Method CircleTest.checkSquare(java.lang.Double)[pri:0, instance:Tests.CircleTest@42a48628] should have thrown an exception of type class java.lang.RuntimeException
 	at org.testng.internal.ExpectedExceptionsHolder.noException(ExpectedExceptionsHolder.java:82)
 	at org.testng.internal.TestInvoker.considerExceptions(TestInvoker.java:729)
 	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:616)
@@ -253,11 +255,11 @@ Method QuadratTest.checkPerimetr(java.lang.Double)[pri:1, instance:Tests.Quadrat
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
 <td>0</td>
-<td>Tests.QuadratTest@5383967b</td></tr>
+<td>Tests.CircleTest@42a48628</td></tr>
 <tr>
-<td title='Tests.QuadratTest.checkSquare()'><b>checkSquare</b><br>Test class: Tests.QuadratTest<br>Parameters: 1.0</td>
+<td title='Tests.CircleTest.checkSquare()'><b>checkSquare</b><br>Test class: Tests.CircleTest<br>Parameters: 2.5</td>
 <td><div><pre>org.testng.TestException: 
-Method QuadratTest.checkSquare(java.lang.Double)[pri:0, instance:Tests.QuadratTest@5383967b] should have thrown an exception of type class java.lang.RuntimeException
+Method CircleTest.checkSquare(java.lang.Double)[pri:0, instance:Tests.CircleTest@42a48628] should have thrown an exception of type class java.lang.RuntimeException
 	at org.testng.internal.ExpectedExceptionsHolder.noException(ExpectedExceptionsHolder.java:82)
 	at org.testng.internal.TestInvoker.considerExceptions(TestInvoker.java:729)
 	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:616)
@@ -283,9 +285,9 @@ Method QuadratTest.checkSquare(java.lang.Double)[pri:0, instance:Tests.QuadratTe
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div><a href='#' onClick='toggleBox("stack-trace422392391", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace422392391'><pre>org.testng.TestException: 
-Method QuadratTest.checkSquare(java.lang.Double)[pri:0, instance:Tests.QuadratTest@5383967b] should have thrown an exception of type class java.lang.RuntimeException
+</pre></div><a href='#' onClick='toggleBox("stack-trace1687662712", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1687662712'><pre>org.testng.TestException: 
+Method CircleTest.checkSquare(java.lang.Double)[pri:0, instance:Tests.CircleTest@42a48628] should have thrown an exception of type class java.lang.RuntimeException
 	at org.testng.internal.ExpectedExceptionsHolder.noException(ExpectedExceptionsHolder.java:82)
 	at org.testng.internal.TestInvoker.considerExceptions(TestInvoker.java:729)
 	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:616)
@@ -313,127 +315,7 @@ Method QuadratTest.checkSquare(java.lang.Double)[pri:0, instance:Tests.QuadratTe
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
 <td>0</td>
-<td>Tests.QuadratTest@5383967b</td></tr>
-<tr>
-<td title='Tests.QuadratTest.checkSquare()'><b>checkSquare</b><br>Test class: Tests.QuadratTest<br>Parameters: 10000.0</td>
-<td><div><pre>org.testng.TestException: 
-Method QuadratTest.checkSquare(java.lang.Double)[pri:0, instance:Tests.QuadratTest@5383967b] should have thrown an exception of type class java.lang.RuntimeException
-	at org.testng.internal.ExpectedExceptionsHolder.noException(ExpectedExceptionsHolder.java:82)
-	at org.testng.internal.TestInvoker.considerExceptions(TestInvoker.java:729)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:616)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.util.ArrayList.forEach(Unknown Source)
-	at org.testng.TestRunner.privateRun(TestRunner.java:770)
-	at org.testng.TestRunner.run(TestRunner.java:591)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:304)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
-	at org.testng.TestNG.runSuites(TestNG.java:1032)
-	at org.testng.TestNG.run(TestNG.java:1000)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1453128758", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1453128758'><pre>org.testng.TestException: 
-Method QuadratTest.checkSquare(java.lang.Double)[pri:0, instance:Tests.QuadratTest@5383967b] should have thrown an exception of type class java.lang.RuntimeException
-	at org.testng.internal.ExpectedExceptionsHolder.noException(ExpectedExceptionsHolder.java:82)
-	at org.testng.internal.TestInvoker.considerExceptions(TestInvoker.java:729)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:616)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.util.ArrayList.forEach(Unknown Source)
-	at org.testng.TestRunner.privateRun(TestRunner.java:770)
-	at org.testng.TestRunner.run(TestRunner.java:591)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:304)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
-	at org.testng.TestNG.runSuites(TestNG.java:1032)
-	at org.testng.TestNG.run(TestNG.java:1000)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
-<td>0</td>
-<td>Tests.QuadratTest@5383967b</td></tr>
-<tr>
-<td title='Tests.QuadratTest.checkSquare()'><b>checkSquare</b><br>Test class: Tests.QuadratTest<br>Parameters: 2.5</td>
-<td><div><pre>org.testng.TestException: 
-Method QuadratTest.checkSquare(java.lang.Double)[pri:0, instance:Tests.QuadratTest@5383967b] should have thrown an exception of type class java.lang.RuntimeException
-	at org.testng.internal.ExpectedExceptionsHolder.noException(ExpectedExceptionsHolder.java:82)
-	at org.testng.internal.TestInvoker.considerExceptions(TestInvoker.java:729)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:616)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.util.ArrayList.forEach(Unknown Source)
-	at org.testng.TestRunner.privateRun(TestRunner.java:770)
-	at org.testng.TestRunner.run(TestRunner.java:591)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:304)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
-	at org.testng.TestNG.runSuites(TestNG.java:1032)
-	at org.testng.TestNG.run(TestNG.java:1000)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div><a href='#' onClick='toggleBox("stack-trace863125040", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace863125040'><pre>org.testng.TestException: 
-Method QuadratTest.checkSquare(java.lang.Double)[pri:0, instance:Tests.QuadratTest@5383967b] should have thrown an exception of type class java.lang.RuntimeException
-	at org.testng.internal.ExpectedExceptionsHolder.noException(ExpectedExceptionsHolder.java:82)
-	at org.testng.internal.TestInvoker.considerExceptions(TestInvoker.java:729)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:616)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.util.ArrayList.forEach(Unknown Source)
-	at org.testng.TestRunner.privateRun(TestRunner.java:770)
-	at org.testng.TestRunner.run(TestRunner.java:591)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:304)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
-	at org.testng.TestNG.runSuites(TestNG.java:1032)
-	at org.testng.TestNG.run(TestNG.java:1000)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
-<td>0</td>
-<td>Tests.QuadratTest@5383967b</td></tr>
+<td>Tests.CircleTest@42a48628</td></tr>
 </table><p>
 </body>
 </html>

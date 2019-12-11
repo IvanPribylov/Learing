@@ -8,178 +8,91 @@
 <body>
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
-<tr><th colspan="7">Default suite</th></tr>
-<tr><td><a href="#t0">Default test</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num attn">6</td><td class="num">41</td><td></td><td></td></tr>
+<tr><th colspan="7">Suite</th></tr>
+<tr><td><a href="#t0">testing</a></td><td class="num">9</td><td class="num">0</td><td class="num">0</td><td class="num attn">5</td><td class="num">55</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="6">Tests.QuadratTest</td><td><a href="#m0">checkPerimetr</a></td><td rowspan="3">1574841054465</td><td rowspan="3">0</td></tr><tr class="failedeven"><td><a href="#m1">checkPerimetr</a></td></tr><tr class="failedeven"><td><a href="#m2">checkPerimetr</a></td></tr><tr class="failedeven"><td><a href="#m3">checkSquare</a></td><td rowspan="3">1574841054460</td><td rowspan="3">0</td></tr><tr class="failedeven"><td><a href="#m4">checkSquare</a></td></tr><tr class="failedeven"><td><a href="#m5">checkSquare</a></td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">testing &#8212; failed</th></tr><tr class="failedeven"><td rowspan="3">Tests.TestFigures.CircleTest</td><td><a href="#m0">checkCircumference</a></td><td rowspan="1">1576080671125</td><td rowspan="1">9</td></tr><tr class="failedeven"><td><a href="#m1">checkSquare</a></td><td rowspan="2">1576080671154</td><td rowspan="2">1</td></tr><tr class="failedeven"><td><a href="#m2">checkSquare</a></td></tr><tr class="failedodd"><td rowspan="2">Tests.TestFigures.RectangleTest</td><td><a href="#m3">checkPerimetr</a></td><td rowspan="1">1576080671166</td><td rowspan="1">2</td></tr><tr class="failedodd"><td><a href="#m4">checkRectangle</a></td><td rowspan="1">1576080671169</td><td rowspan="1">1</td></tr><tr><th colspan="4">testing &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">Tests.TestFigures.CircleTest</td><td><a href="#m5">checkSquare</a></td><td rowspan="1">1576080671140</td><td rowspan="1">9</td></tr><tr class="passedodd"><td rowspan="6">Tests.TestFigures.QuadratTest</td><td><a href="#m6">checkPerimetr</a></td><td rowspan="3">1576080671163</td><td rowspan="3">1</td></tr><tr class="passedodd"><td><a href="#m7">checkPerimetr</a></td></tr><tr class="passedodd"><td><a href="#m8">checkPerimetr</a></td></tr><tr class="passedodd"><td><a href="#m9">checkSquare</a></td><td rowspan="3">1576080671160</td><td rowspan="3">1</td></tr><tr class="passedodd"><td><a href="#m10">checkSquare</a></td></tr><tr class="passedodd"><td><a href="#m11">checkSquare</a></td></tr><tr class="passedeven"><td rowspan="2">Tests.TestFigures.RectangleTest</td><td><a href="#m12">checkPerimetr</a></td><td rowspan="1">1576080671166</td><td rowspan="1">1</td></tr><tr class="passedeven"><td><a href="#m13">checkRectangle</a></td><td rowspan="1">1576080671169</td><td rowspan="1">1</td></tr></tbody>
 </table>
-<h2>Default test</h2><h3 id="m0">Tests.QuadratTest#checkPerimetr</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>2.5</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.testng.TestException: 
-Method QuadratTest.checkPerimetr(java.lang.Double)[pri:1, instance:Tests.QuadratTest@5383967b] should have thrown an exception of type class java.lang.RuntimeException
-	at org.testng.internal.ExpectedExceptionsHolder.noException(ExpectedExceptionsHolder.java:82)
-	at org.testng.internal.TestInvoker.considerExceptions(TestInvoker.java:729)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:616)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+<h2>testing</h2><h3 id="m0">Tests.TestFigures.CircleTest#checkCircumference</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.testng.internal.reflect.MethodMatcherException: 
+[public void Tests.TestFigures.CircleTest.checkCircumference(java.lang.Double,java.lang.Double)] has no parameters defined but was found to be using a data provider (either explicitly specified or inherited from class level annotation).
+Data provider mismatch
+Arguments: [(java.lang.Double) 1.0]
 	at java.util.ArrayList.forEach(Unknown Source)
-	at org.testng.TestRunner.privateRun(TestRunner.java:770)
-	at org.testng.TestRunner.run(TestRunner.java:591)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:304)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
-	at org.testng.TestNG.runSuites(TestNG.java:1032)
-	at org.testng.TestNG.run(TestNG.java:1000)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">Tests.QuadratTest#checkPerimetr</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>10000.0</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.testng.TestException: 
-Method QuadratTest.checkPerimetr(java.lang.Double)[pri:1, instance:Tests.QuadratTest@5383967b] should have thrown an exception of type class java.lang.RuntimeException
-	at org.testng.internal.ExpectedExceptionsHolder.noException(ExpectedExceptionsHolder.java:82)
-	at org.testng.internal.TestInvoker.considerExceptions(TestInvoker.java:729)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:616)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+... Removed 23 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">Tests.TestFigures.CircleTest#checkSquare</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>2.5</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.testng.TestException: 
+The exception was thrown with the wrong message: expected &quot;The values aren&apos;t the same&quot; but got &quot;expected [19.635] but found [19.636]&quot;
 	at java.util.ArrayList.forEach(Unknown Source)
-	at org.testng.TestRunner.privateRun(TestRunner.java:770)
-	at org.testng.TestRunner.run(TestRunner.java:591)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:304)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
-	at org.testng.TestNG.runSuites(TestNG.java:1032)
-	at org.testng.TestNG.run(TestNG.java:1000)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">Tests.QuadratTest#checkPerimetr</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>1.0</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.testng.TestException: 
-Method QuadratTest.checkPerimetr(java.lang.Double)[pri:1, instance:Tests.QuadratTest@5383967b] should have thrown an exception of type class java.lang.RuntimeException
-	at org.testng.internal.ExpectedExceptionsHolder.noException(ExpectedExceptionsHolder.java:82)
-	at org.testng.internal.TestInvoker.considerExceptions(TestInvoker.java:729)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:616)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+Caused by: java.lang.AssertionError: expected [19.635] but found [19.636]
+	at Tests.Equaliser.equialTwo(Equaliser.java:9)
+	at Tests.TestFigures.CircleTest.checkSquare(CircleTest.java:34)
+	... 22 more
+... Removed 34 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">Tests.TestFigures.CircleTest#checkSquare</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>10000.0</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.testng.TestException: 
+The exception was thrown with the wrong message: expected &quot;The values aren&apos;t the same&quot; but got &quot;expected [3.14159265359E8] but found [3.1415926536E8]&quot;
 	at java.util.ArrayList.forEach(Unknown Source)
-	at org.testng.TestRunner.privateRun(TestRunner.java:770)
-	at org.testng.TestRunner.run(TestRunner.java:591)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:304)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
-	at org.testng.TestNG.runSuites(TestNG.java:1032)
-	at org.testng.TestNG.run(TestNG.java:1000)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m3">Tests.QuadratTest#checkSquare</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>2.5</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.testng.TestException: 
-Method QuadratTest.checkSquare(java.lang.Double)[pri:0, instance:Tests.QuadratTest@5383967b] should have thrown an exception of type class java.lang.RuntimeException
-	at org.testng.internal.ExpectedExceptionsHolder.noException(ExpectedExceptionsHolder.java:82)
-	at org.testng.internal.TestInvoker.considerExceptions(TestInvoker.java:729)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:616)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+Caused by: java.lang.AssertionError: expected [3.14159265359E8] but found [3.1415926536E8]
+	at Tests.Equaliser.equialTwo(Equaliser.java:9)
+	at Tests.TestFigures.CircleTest.checkSquare(CircleTest.java:34)
+	... 22 more
+... Removed 34 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">Tests.TestFigures.RectangleTest#checkPerimetr</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.testng.internal.reflect.MethodMatcherException: 
+[public void Tests.TestFigures.RectangleTest.checkPerimetr(java.lang.Double,java.lang.Double)] has no parameters defined but was found to be using a data provider (either explicitly specified or inherited from class level annotation).
+Data provider mismatch
+Method: checkPerimetr([Parameter{index=0, type=java.lang.Double, declaredAnnotations=[]}, Parameter{index=1, type=java.lang.Double, declaredAnnotations=[]}])
+Arguments: [(java.lang.Integer) 10000,(java.lang.Double) 2.0]
 	at java.util.ArrayList.forEach(Unknown Source)
-	at org.testng.TestRunner.privateRun(TestRunner.java:770)
-	at org.testng.TestRunner.run(TestRunner.java:591)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:304)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
-	at org.testng.TestNG.runSuites(TestNG.java:1032)
-	at org.testng.TestNG.run(TestNG.java:1000)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m4">Tests.QuadratTest#checkSquare</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>1.0</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.testng.TestException: 
-Method QuadratTest.checkSquare(java.lang.Double)[pri:0, instance:Tests.QuadratTest@5383967b] should have thrown an exception of type class java.lang.RuntimeException
-	at org.testng.internal.ExpectedExceptionsHolder.noException(ExpectedExceptionsHolder.java:82)
-	at org.testng.internal.TestInvoker.considerExceptions(TestInvoker.java:729)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:616)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+... Removed 22 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">Tests.TestFigures.RectangleTest#checkRectangle</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.testng.internal.reflect.MethodMatcherException: 
+[public void Tests.TestFigures.RectangleTest.checkRectangle(java.lang.Double,java.lang.Double)] has no parameters defined but was found to be using a data provider (either explicitly specified or inherited from class level annotation).
+Data provider mismatch
+Method: checkRectangle([Parameter{index=0, type=java.lang.Double, declaredAnnotations=[]}, Parameter{index=1, type=java.lang.Double, declaredAnnotations=[]}])
+Arguments: [(java.lang.Integer) 10000,(java.lang.Double) 2.0]
 	at java.util.ArrayList.forEach(Unknown Source)
-	at org.testng.TestRunner.privateRun(TestRunner.java:770)
-	at org.testng.TestRunner.run(TestRunner.java:591)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:304)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
-	at org.testng.TestNG.runSuites(TestNG.java:1032)
-	at org.testng.TestNG.run(TestNG.java:1000)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m5">Tests.QuadratTest#checkSquare</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>10000.0</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.testng.TestException: 
-Method QuadratTest.checkSquare(java.lang.Double)[pri:0, instance:Tests.QuadratTest@5383967b] should have thrown an exception of type class java.lang.RuntimeException
-	at org.testng.internal.ExpectedExceptionsHolder.noException(ExpectedExceptionsHolder.java:82)
-	at org.testng.internal.TestInvoker.considerExceptions(TestInvoker.java:729)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:616)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+... Removed 22 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">Tests.TestFigures.CircleTest#checkSquare</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>1.0</td></tr><tr><th>Expected Exception</th></tr><tr><td><div class="stacktrace">java.lang.RuntimeException: The values aren&apos;t the same
+	at Tests.Equaliser.equialTwo(Equaliser.java:12)
+	at Tests.TestFigures.CircleTest.checkSquare(CircleTest.java:34)
 	at java.util.ArrayList.forEach(Unknown Source)
-	at org.testng.TestRunner.privateRun(TestRunner.java:770)
-	at org.testng.TestRunner.run(TestRunner.java:591)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:304)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
-	at org.testng.TestNG.runSuites(TestNG.java:1032)
-	at org.testng.TestNG.run(TestNG.java:1000)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+... Removed 27 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">Tests.TestFigures.QuadratTest#checkPerimetr</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>10000.0</td></tr><tr><th>Expected Exception</th></tr><tr><td><div class="stacktrace">java.lang.RuntimeException: The values aren&apos;t the same
+	at Tests.Equaliser.equialTwo(Equaliser.java:12)
+	at Tests.TestFigures.QuadratTest.checkPerimetr(QuadratTest.java:31)
+	at java.util.ArrayList.forEach(Unknown Source)
+... Removed 27 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">Tests.TestFigures.QuadratTest#checkPerimetr</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>2.5</td></tr><tr><th>Expected Exception</th></tr><tr><td><div class="stacktrace">java.lang.RuntimeException: The values aren&apos;t the same
+	at Tests.Equaliser.equialTwo(Equaliser.java:12)
+	at Tests.TestFigures.QuadratTest.checkPerimetr(QuadratTest.java:31)
+	at java.util.ArrayList.forEach(Unknown Source)
+... Removed 27 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m8">Tests.TestFigures.QuadratTest#checkPerimetr</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>1.0</td></tr><tr><th>Expected Exception</th></tr><tr><td><div class="stacktrace">java.lang.RuntimeException: The values aren&apos;t the same
+	at Tests.Equaliser.equialTwo(Equaliser.java:12)
+	at Tests.TestFigures.QuadratTest.checkPerimetr(QuadratTest.java:31)
+	at java.util.ArrayList.forEach(Unknown Source)
+... Removed 27 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m9">Tests.TestFigures.QuadratTest#checkSquare</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>2.5</td></tr><tr><th>Expected Exception</th></tr><tr><td><div class="stacktrace">java.lang.RuntimeException: The values aren&apos;t the same
+	at Tests.Equaliser.equialTwo(Equaliser.java:12)
+	at Tests.TestFigures.QuadratTest.checkSquare(QuadratTest.java:20)
+	at java.util.ArrayList.forEach(Unknown Source)
+... Removed 27 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m10">Tests.TestFigures.QuadratTest#checkSquare</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>10000.0</td></tr><tr><th>Expected Exception</th></tr><tr><td><div class="stacktrace">java.lang.RuntimeException: The values aren&apos;t the same
+	at Tests.Equaliser.equialTwo(Equaliser.java:12)
+	at Tests.TestFigures.QuadratTest.checkSquare(QuadratTest.java:20)
+	at java.util.ArrayList.forEach(Unknown Source)
+... Removed 27 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m11">Tests.TestFigures.QuadratTest#checkSquare</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>1.0</td></tr><tr><th>Expected Exception</th></tr><tr><td><div class="stacktrace">java.lang.RuntimeException: The values aren&apos;t the same
+	at Tests.Equaliser.equialTwo(Equaliser.java:12)
+	at Tests.TestFigures.QuadratTest.checkSquare(QuadratTest.java:20)
+	at java.util.ArrayList.forEach(Unknown Source)
+... Removed 27 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m12">Tests.TestFigures.RectangleTest#checkPerimetr</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>2.0</td><td>2.0</td></tr><tr><th colspan="2">Expected Exception</th></tr><tr><td colspan="2"><div class="stacktrace">java.lang.RuntimeException: The values aren&apos;t the same
+	at Tests.Equaliser.equialTwo(Equaliser.java:12)
+	at Tests.TestFigures.RectangleTest.checkPerimetr(RectangleTest.java:31)
+	at java.util.ArrayList.forEach(Unknown Source)
+... Removed 27 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m13">Tests.TestFigures.RectangleTest#checkRectangle</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>2.0</td><td>2.0</td></tr><tr><th colspan="2">Expected Exception</th></tr><tr><td colspan="2"><div class="stacktrace">java.lang.RuntimeException: The values aren&apos;t the same
+	at Tests.Equaliser.equialTwo(Equaliser.java:12)
+	at Tests.TestFigures.RectangleTest.checkRectangle(RectangleTest.java:20)
+	at java.util.ArrayList.forEach(Unknown Source)
+... Removed 27 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>
